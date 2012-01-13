@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database name="propel" defaultIdMethod="native" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceScheaLocation="http://xsd.propelorm.org/1.6/database.xsd" >
+
+  <table name="tab_status" phpName="Status">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="label" type="varchar" />
+    <column name="description" type="longvarchar" />
+  </table>
+
+  <table name="tab_priority" phpName="Priority">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="label" type="varchar" />
+    <column name="description" type="longvarchar" />
+  </table>
+
+  <table name="tab_issue" phpName="Issue">
+    <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
+    <column name="label" type="varchar" />
+    <column name="description" type="longvarchar" />
+    <column name="status_id" type="integer" />
+    <column name="priority_id" type="integer" />
+    <foreign-key foreignTable="tab_status">
+      <reference local="status_id" foreign="id" />
+    </foreign-key>
+    <foreign-key foreignTable="tab_priority">
+      <reference local="priority_id" foreign="id" />
+    </foreign-key>
+  </table>
+</database>

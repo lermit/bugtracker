@@ -1,0 +1,22 @@
+Status:
+  Status_1:
+    label: New
+    description: 'I''m a new issue. Please read and process me'
+  Status_2:
+    label: Assigned
+    description: 'Somebody will work on this issue in no time'
+  Status_3:
+    label: 'In progress'
+    description: 'Somebody work on this issue'
+  Status_4:
+    label: Resolved
+    description: 'The issue is resolved.'
+  Status_6:
+    label: Invalid
+    description: 'This issue has been marked as invalid'
+  Status_5:
+    label: Deployed
+    description: 'Work was merged into production environment'
+  Status_7:
+    label: Duplicated
+    description: 'This bug has been marked as duplicated'
