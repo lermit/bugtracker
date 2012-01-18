@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<database name="propel" defaultIdMethod="native" 
+<database name="propel" defaultIdMethod="native"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:noNamespaceScheaLocation="http://xsd.propelorm.org/1.6/database.xsd" >
 
@@ -13,6 +13,7 @@
     <column name="id" type="integer" required="true" primaryKey="true" autoIncrement="true" />
     <column name="label" type="varchar" />
     <column name="description" type="longvarchar" />
+    <column name="position" type="integer" />
   </table>
 
   <table name="tab_issue" phpName="Issue">
