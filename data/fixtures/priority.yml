@@ -1,0 +1,16 @@
+Priority:
+  Priority_1:
+    label: Low
+    description: 'A low priority'
+  Priority_2:
+    label: Normal
+    description: 'A normal priority'
+  Priority_3:
+    label: High
+    description: 'A high priority'
+  Priority_4:
+    label: Urgent
+    description: 'An urgent priority'
+  Priority_5:
+    label: Immediate
+    description: 'An immediate priority'
