@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html> 
+<html>
   <head>
     <meta charset="utf-8" />
     <?php include_http_metas() ?>
@@ -17,7 +17,14 @@
           <h3><a href="/">Bugtracker</a></h3>
           <ul>
             <li><a href="#">Accueil</a></li>
-            <li><a href="#">Tickets</a></li>
+            <li>
+              <a href="#" class="menu">Tickets</a>
+              <ul class="dropdown-menu">
+                <li><a href="#" title"Add a ticket">Add</a></li>
+                <li><a href="#" title"View all ticket">List</a></li>
+                <li><a href="#" title"Advenced search">Advenced search</a></li>
+              </ul>
+            </li>
             <li><a href="#">Historique</a></li>
           </ul>
           <form action="">
