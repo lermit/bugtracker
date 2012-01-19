@@ -6,6 +6,18 @@ homepage:
   url:   /
   param: { module: default, action: index }
 
+ticket_add:
+  url:  /ticket/add
+  param: { module: issue, action: new}
+ticket_list:
+  url: /ticket/show_all
+  param: { module: issue, action: index }
+ticket_edit:
+  url: /ticket/edit/:id
+  param: { module: issue, action: edit }
+  require: { id: \d+ }
+
+
 # generic rules
 # please, remove them by adding more specific rules
 default_index:
